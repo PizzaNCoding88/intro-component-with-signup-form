@@ -22,15 +22,39 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 20%;
+    /* justify-content: center; */
 }
 
 .description{
     width: 70%;
-    height: 35%;
-    background-color: var(--grayish-blue);
+    height: 30%;
+    
+    color: white;
 }
 
 h1{
     text-align: center;
+}
+
+.description p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.pricing-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-container{
+    width: 70%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: ;
 }
