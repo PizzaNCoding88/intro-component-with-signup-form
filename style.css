@@ -24,3 +24,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.description{
+    width: 70%;
+    height: 35%;
+    background-color: var(--grayish-blue);
+}
+
+h1{
+    text-align: center;
+}
