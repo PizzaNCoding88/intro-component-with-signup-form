@@ -22,39 +22,110 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
-    /* justify-content: center; */
+    margin-top: 10%;
 }
 
 .description{
+    max-width: 340px;
     width: 70%;
     height: 30%;
-    
     color: white;
+    overflow: hidden;
 }
 
 h1{
     text-align: center;
+    padding: 0 30px;
 }
 
 .description p{
     text-align: center;
     font-size: 16px;
     line-height: 30px;
+    padding: 0 10px;
 }
 
 .pricing-form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+    max-width: 340px;
 }
 
 .pricing-container{
-    width: 70%;
+    width: 100%;
     background-color: var(--blue);
     color: white;
     text-align: center;
+    line-height: 30px;
     border-radius: 10px;
     border: none;
-    box-shadow: ;
+    box-shadow: 0 10px 10px var(--dark-blue);
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.form-container{
+    width: 100%;
+    background-color: white;
+    padding: 5px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+input::placeholder{
+    font-size: 15px;
+    font-family: var(--font);
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+form input{
+    border: 1px solid var(--grayish-blue);
+    border-radius: 3px;
+    margin-top: 20px;
+    height: 50px;
+    
+}
+
+.submit{
+    background-color: var(--green);
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--font);
+    font-size: 16px;
+    word-spacing: 4px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px hsl(154, 64%, 40%);
+}
+
+.form-container p{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 0 45px;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--grayish-blue);
+}
+
+.form-container a{
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.attribution{
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
 }
