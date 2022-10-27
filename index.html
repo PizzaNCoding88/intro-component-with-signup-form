@@ -29,17 +29,26 @@
     <div class="form-container">
       <form name="myForm" action="/" method="get" id="form">
 
-        <input type="text" class="fname" id="fname" name="fname" placeholder="First Name">
-        <p id="fNameError" class="hidden"><i class="fa-solid fa-circle-exclamation"></i> &#160First Name cannot be empty</p>
         
-        <input type="text" id="lname" name="lname" placeholder="Last Name" >
-        <p id="lNameError"><i class="fa-solid fa-circle-exclamation"></i> &#160Last Name cannot be empty</p>
+        <input type="text" class="fname" id="fname" name="fname" placeholder="First Name">
+        <div class="fNameError hidden">
+          <p id="fNameError"><i class="fa-solid fa-circle-exclamation"></i> &#160First Name cannot be empty</p>
+        </div>
 
-        <input type="email" id="email" name="email" placeholder="Email Address" >
-        <p id="emailError"><i class="fa-solid fa-circle-exclamation"></i> &#160Email cannot be empty</p>
+        <input class="lname" type="text" id="lname" name="lname" placeholder="Last Name" >
+        <div class="lNameError hidden">
+          <p id="lNameError"><i class="fa-solid fa-circle-exclamation"></i> &#160Last Name cannot be empty</p>
+        </div>
+
+        <input class="email" type="email" id="email" name="email" placeholder="Email Address" >
+        <div class="emailError hidden">
+          <p id="emailError"><i class="fa-solid fa-circle-exclamation"></i> &#160Email cannot be empty</p>
+        </div>
 
         <input type="password" id="password" name="password" placeholder="Password" >
-        <p id="passwordError"><i class="fa-solid fa-circle-exclamation"></i> &#160Password cannot be empty</p>
+        <div class="passwordError hidden">
+          <p id="passwordError"><i class="fa-solid fa-circle-exclamation"></i> &#160Password cannot be empty</p>
+        </div>
 
         <input class="submit" type="submit" value="Claim your free trial" id="submit">
       </form>
