@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/16aa083a7f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="description">
@@ -22,20 +23,30 @@
   </section>
   <section class="pricing-form">
     <div class="pricing-container">
-      <b>Try it free 7</b> days then <br> 
+      <b>Try it free 7 days</b> then
       $20/mo. thereafter
     </div>
     <div class="form-container">
-      <form>
-        <input type="text" id="fname" name="fname" placeholder="First Name" >
+      <form name="myForm" action="/" method="get" id="form">
+
+        <input type="text" class="fname" id="fname" name="fname" placeholder="First Name">
+        <p id="fNameError" class="hidden"><i class="fa-solid fa-circle-exclamation"></i> &#160First Name cannot be empty</p>
+        
         <input type="text" id="lname" name="lname" placeholder="Last Name" >
+        <p id="lNameError"><i class="fa-solid fa-circle-exclamation"></i> &#160Last Name cannot be empty</p>
+
         <input type="email" id="email" name="email" placeholder="Email Address" >
+        <p id="emailError"><i class="fa-solid fa-circle-exclamation"></i> &#160Email cannot be empty</p>
+
         <input type="password" id="password" name="password" placeholder="Password" >
-        <input class="submit" type="submit" value="Claim your free trial">
+        <p id="passwordError"><i class="fa-solid fa-circle-exclamation"></i> &#160Password cannot be empty</p>
+
+        <input class="submit" type="submit" value="Claim your free trial" id="submit">
       </form>
       <p>
         By clicking the button, you are agreeing to our <a href="">Terms and Services</a>
       </p>
+      <p class="error"></p>
     </div>
   </section>
 
@@ -45,8 +56,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/PizzaNCoding88" target="_blank">PizzaNCoding88</a>.
     </p>
-
-    <script src="form.js"></script>
   </footer>
+  <script src="form.js"></script>
 </body>
 </html>
