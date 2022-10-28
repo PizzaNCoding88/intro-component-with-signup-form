@@ -50,5 +50,4 @@ form.addEventListener('submit', (e) => {
         passwordError.classList.toggle("hidden");
         password.style.borderColor = "red";
     }
-
-})
+});
